@@ -1,0 +1,178 @@
+.projects-container-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 32px;
+  box-sizing: border-box;
+
+  padding-top: 40px;
+  padding-bottom: 120px;
+}
+
+.projects-container {
+  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+
+  grid-column-start: 4;
+  grid-column-end: 10;
+}
+
+.projects-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: left;
+  height: auto;
+
+  margin: 0;
+  margin-top: 0;
+}
+
+.projects-button {
+  color: white;
+  background-color: hsla(259, 96%, 59%);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  border-radius: 90px;
+
+  margin-top: 20px;
+  margin-right: 16px;
+  padding: 12px 32px;
+}
+
+.projects-button a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.projects-section img {
+  max-width: 100%;
+}
+
+.website-image img {
+  box-shadow: 0px 2px 2px 1px hsla(0, 0%, 0%, 0.2);
+}
+
+.projects-section a,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.projects-text {
+  text-align: left;
+  margin: 0 auto;
+}
+
+.projects-text-wordbuzz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.projects-youtube {
+    text-align: center;
+    margin: 120px auto 40px auto;
+}
+.projects-youtube h5 {
+    color: black;
+    font-size: 28px;
+    text-align: left;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: 0em;
+
+    margin: 20px 0;
+}
+
+.project-image {
+  text-align: center;
+  max-width: 100%;
+  padding-top: 80px;
+}
+
+.projects-section h5 {
+  color: black;
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: 0em;
+
+  margin: 0;
+  padding: 0;
+  padding-bottom: 16px;
+}
+
+.projects-section h6 {
+  color: hsla(244, 82%, 58%);
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 800;
+  letter-spacing: 0em;
+
+  margin: 0;
+  padding: 24px 0 6px 0;
+}
+
+.projects-section p {
+  color: #1d1d1f;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.2381;
+  letter-spacing: 0.016em;
+
+  margin: 0;
+}
+
+.project-link-container {
+  padding-top: 12px;
+}
+
+.projects-wordbuzz-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projects-wordbuzz-images img {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 30%;
+}
+
+.projects-tiptop-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.projects-tiptop-images .tiptop-iphone {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 30%;
+  }
+
+  .projects-tiptop-images .tiptop-ipad {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 50%;
+  }
+

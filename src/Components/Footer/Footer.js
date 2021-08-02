@@ -1,0 +1,19 @@
+import React from "react";
+import "./Footer.css";
+
+export class Footer extends React.Component {
+  render() {
+    return (
+      <div className="footer-container">
+        <div className="footer-text">
+          <h2>
+            <a>Interested in working together?</a>
+          </h2>
+          <button className="footer-button"><a href="mailto:joeysteigelman@gmail.com?subject=Hello">Contact</a></button>
+
+       </div>
+       <p>Copyright 2021 Joey Steigelman</p>
+      </div>
+    );
+  }
+}
