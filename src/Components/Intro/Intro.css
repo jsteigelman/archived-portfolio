@@ -40,3 +40,46 @@
 
 }
 
+.mobile-button {
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width: 769px) {
+
+  .intro-row {
+    grid-column-start: 2;
+    grid-column-end: 12;
+  }
+
+  .intro-row-text h2 {
+    font-size: 40px; 
+  }
+
+  .mobile-button {
+    display: block;
+    background-color: hsla(259, 96%, 59%);
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 28px;
+    font-weight: 500;
+    border-radius: 90px;
+  }
+  
+  .mobile-button a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+}

@@ -1,5 +1,5 @@
 .marquee {
-  width: 100%;
+  /* width: 100%; */
   height: 64px;
   margin: 0 auto; 
   color: white;
@@ -9,13 +9,21 @@
   font-weight: 500;
   background-color: hsla(259, 96%, 59%);
   /* display: inline-block; */
-  white-space: nowrap;
+  /* white-space: nowrap; */
   /* overflow: hidden; */
 
 
 }
-/* 
+
 .marquee p {
-  display: inline-block;
-  white-space: nowrap;
-} */
+  padding-right: 6px;
+} 
+
+@media only screen and (max-width: 769px) {
+
+  /* div.marquee {
+      display: none
+
+    } */
+
+}

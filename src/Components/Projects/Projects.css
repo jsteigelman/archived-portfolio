@@ -91,6 +91,7 @@ a:active {
     text-align: center;
     margin: 120px auto 40px auto;
 }
+
 .projects-youtube h5 {
     color: black;
     font-size: 28px;
@@ -149,6 +150,7 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .projects-wordbuzz-images img {
@@ -176,3 +178,21 @@ a:active {
     max-width: 50%;
   }
 
+
+  @media only screen and (max-width: 769px) {
+
+    .projects-container {
+        grid-column-start: 2;
+        grid-column-end: 12;
+      }
+
+      .projects-youtube {
+        display: none;
+    }
+
+    .projects-container-grid {
+        padding-top: 0;
+        padding-bottom: 80px;
+    }
+  
+  }

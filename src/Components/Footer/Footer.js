@@ -7,12 +7,13 @@ export class Footer extends React.Component {
       <div className="footer-container">
         <div className="footer-text">
           <h2>
-            <a>Interested in working together?</a>
+            <a>Questions? Comments?</a>
           </h2>
           <button className="footer-button"><a href="mailto:joeysteigelman@gmail.com?subject=Hello">Contact</a></button>
 
        </div>
        <p>Copyright 2021 Joey Steigelman</p>
+
       </div>
     );
   }

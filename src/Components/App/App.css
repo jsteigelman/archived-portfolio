@@ -28,3 +28,13 @@
 .section-description span {
   color: hsla(259, 96%, 59%);
 }
+
+@media only screen and (max-width: 769px) {
+
+ 
+.section-description {
+  font-size: 40px;
+ 
+}
+
+}

@@ -9,7 +9,7 @@ export class MarqueeTicker extends React.Component {
         <Marquee gradient={false} speed={90}>
           <p>
             Say hi at joey.steigelman@gmail.com · Say hi at
-            joey.steigelman@gmail.com · Say hi at joey.steigelman@gmail.com ·
+            joey.steigelman@gmail.com · Say hi at joey.steigelman@gmail.com ·{" "}
           </p>
         </Marquee>
       </div>

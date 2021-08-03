@@ -50,9 +50,11 @@ export class Cards extends React.Component {
             <h4>Experience</h4>
             <ul>
               <li>Agile</li>
-              <li>Big data</li>
+              <li>Scrum</li>
+              <li>Kanban</li>
               <li>Product management</li>
-              <li>Organizational change</li>
+              <li>Big data</li>
+              {/* <li>Organizational change</li> */}
             </ul>
           </div>
         </div>
