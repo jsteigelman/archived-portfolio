@@ -42,7 +42,6 @@ export class Cards extends React.Component {
             <ul>
               <li>Agile</li>
               <li>Scrum</li>
-              <li>Kanban</li>
               <li>Product management</li>
               <li>Big data</li>
               <li>Organizational change</li>
