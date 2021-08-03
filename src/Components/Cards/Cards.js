@@ -1,17 +1,11 @@
 import React from "react";
 import "./Cards.css";
-import cards_image_programming from "./../Images/cards_icon_programming.png";
-import icon_one from "./../Images/icon_one.png";
-import icon_two from "./../Images/icon_two.png";
-import icon_three from "./../Images/icon_three.png";
-import icon_four from "./../Images/icon_four.png";
 
 export class Cards extends React.Component {
   render() {
     return (
         <div className="cards-container">
           <div className="cards-child child-one">
-            {/* <img src={icon_one} /> */}
             <h4>Programming</h4>
             <ul>
               <li>ReactJS</li>
@@ -24,7 +18,6 @@ export class Cards extends React.Component {
             </ul>
           </div>
           <div className="cards-child child-two">
-            {/* <img src={icon_two} /> */}
             <h4>Technologies</h4>
             <ul>
               <li>Figma</li>
@@ -37,7 +30,6 @@ export class Cards extends React.Component {
             </ul>
           </div>
           <div className="cards-child child-three">
-            {/* <img src={icon_three} /> */}
             <h4>Certifications</h4>
             <ul>
               <li>CodePath's iOS Development</li>
@@ -46,7 +38,6 @@ export class Cards extends React.Component {
             </ul>
           </div>
           <div className="cards-child child-four">
-            {/* <img src={icon_four} /> */}
             <h4>Experience</h4>
             <ul>
               <li>Agile</li>
