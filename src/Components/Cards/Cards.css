@@ -47,7 +47,6 @@
   margin: 0;
   padding: 0;
 
-  /* test */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -84,8 +83,6 @@
 
 @media only screen and (max-width: 769px) {
   .cards-container {
-    display: flex;
-    /* flex-direction: column; */
     height: auto;
     overflow-x: auto;
   }

@@ -45,7 +45,7 @@ export class Cards extends React.Component {
               <li>Kanban</li>
               <li>Product management</li>
               <li>Big data</li>
-              {/* <li>Organizational change</li> */}
+              <li>Organizational change</li>
             </ul>
           </div>
         </div>
