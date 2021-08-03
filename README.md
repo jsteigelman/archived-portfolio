@@ -1,6 +1,6 @@
 # Developer Portfolio Website
 
-This is my developer portfolio website built in React. 
+This is my developer portfolio website that I built in React. 
 
 ## Live Site URL
 [www.helloimjoey.com](https://www.helloimjoey.com/)
