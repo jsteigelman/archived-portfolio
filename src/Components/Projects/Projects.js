@@ -111,7 +111,6 @@ export class Projects extends React.Component {
               height="385"
               src="https://www.youtube.com/embed/auQ3POqs-F8"
               title="YouTube video player"
-              onClick={this.eventTrack.bind("YouTube", "YouTube Video Player", "Video Player")}
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
