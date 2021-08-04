@@ -316,7 +316,7 @@ export class Projects extends React.Component {
           <div className="projects-section projects-memory">
             <div className="projects-content">
               <div className="projects-text">
-                <h6>HTML + CSS</h6>
+                <h6>HTML + CSS + Javascript</h6>
                 <h5>Light and Sound Memory Game</h5>
                 <p>
                   This is a memory game in which players must repeat random
