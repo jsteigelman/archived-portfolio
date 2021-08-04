@@ -265,7 +265,7 @@ export class Projects extends React.Component {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="www.steigelman-sunnyside.netlify.app"
+                  href="https://steigelman-sunnyside.netlify.app/"
                 >
                   <InView threshold={0.25}>
                     {({ ref, inView }) => (
@@ -294,7 +294,7 @@ export class Projects extends React.Component {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="www.steigelman-sunnyside.netlify.app"
+                      href="https://steigelman-sunnyside.netlify.app/"
                     >
                       Live Site
                     </a>
