@@ -168,7 +168,7 @@ export class Projects extends React.Component {
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href="www.vmoholo.org"
+                  href="https://vmoholo.org/"
                 >
                   <InView threshold={0.25}>
                     {({ ref, inView }) => (
@@ -196,7 +196,7 @@ export class Projects extends React.Component {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="www.vmoholo.org"
+                      href="https://vmoholo.org/"
                     >
                       Live Site
                     </a>
@@ -220,7 +220,7 @@ export class Projects extends React.Component {
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href="www.joeysteigelman.com"
+                      href="https://www.joeysteigelman.com/"
                     >
                       Live Site
                     </a>
@@ -241,7 +241,7 @@ export class Projects extends React.Component {
               <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="www.joeysteigelman.com"
+                href="https://www.joeysteigelman.com/"
               >
                 <InView threshold={0.25}>
                   {({ ref, inView }) => (
