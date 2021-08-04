@@ -11,8 +11,21 @@ import tiptop_image from "./../Images/projects-tiptop.png";
 import tiptop_ipad from "./../Images/projects-tiptop-ipad.png";
 import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
+import ReactGA from 'react-ga';
+
 
 export class Projects extends React.Component {
+
+    // handle button click
+    eventTrack = (category, action, label) => {
+      ReactGA.event({
+        category: category,
+        action: action,
+        label: label,
+      })
+    }
+
+
   render() {
     return (
       <div className="projects-container-grid">
@@ -29,7 +42,7 @@ export class Projects extends React.Component {
                   CodePath’s National Demo Day out of over 125 groups.{" "}
                 </p>
                 <div className="project-link-container">
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("YouTube Site", "WordBuzz YouTube Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -38,7 +51,7 @@ export class Projects extends React.Component {
                       YouTube
                     </a>
                   </button>
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "WordBuzz GitHub Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -98,6 +111,7 @@ export class Projects extends React.Component {
               height="385"
               src="https://www.youtube.com/embed/auQ3POqs-F8"
               title="YouTube video player"
+              onClick={this.eventTrack.bind("YouTube", "YouTube Video Player", "Video Player")}
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
@@ -118,7 +132,7 @@ export class Projects extends React.Component {
                   amongst friends.{" "}
                 </p>
                 <div className="project-link-container">
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "TipTop Github Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -192,7 +206,7 @@ export class Projects extends React.Component {
                   Holography. New updates to the website coming soon.
                 </p>
                 <div className="project-link-container">
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "VMOH Live Site Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -216,7 +230,7 @@ export class Projects extends React.Component {
                   showcase my artwork.
                 </p>
                 <div className="project-link-container">
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Artist Live Site Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -225,7 +239,7 @@ export class Projects extends React.Component {
                       Live Site
                     </a>
                   </button>
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Artist GitHub Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -290,7 +304,7 @@ export class Projects extends React.Component {
                   front-end challenges that include professional web designs.
                 </p>
                 <div className="project-link-container">
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Sunnyside Live Site Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -299,7 +313,7 @@ export class Projects extends React.Component {
                       Live Site
                     </a>
                   </button>
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Sunnyside GitHub Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -324,7 +338,7 @@ export class Projects extends React.Component {
                   correct order.
                 </p>
                 <div className="project-link-container">
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Memory Game Live Site Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
@@ -333,7 +347,7 @@ export class Projects extends React.Component {
                       Live Site
                     </a>
                   </button>
-                  <button className="projects-button">
+                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Memory Game GitHub Button", "Button")}>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
