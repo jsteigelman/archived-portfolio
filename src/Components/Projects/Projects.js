@@ -198,7 +198,7 @@ export class Projects extends React.Component {
                 </a>
               </div>
               <div className="projects-text">
-                <h6>ReactJS</h6>
+                <h6>React</h6>
                 <h5>The Virtual Museum of Holography Website</h5>
                 <p>
                   Designed and developed the website for The Virtual Museum of
@@ -222,7 +222,7 @@ export class Projects extends React.Component {
           <div className="projects-section projects-artwork">
             <div>
               <div className="projects-text">
-                <h6>ReactJS</h6>
+                <h6>React</h6>
                 <h5>Artist Website</h5>
                 <p>
                   I’m an artist turned developer. This is a website I created to

@@ -8,7 +8,7 @@ export class Cards extends React.Component {
           <div className="cards-child child-one">
             <h4>Programming</h4>
             <ul>
-              <li>ReactJS</li>
+              <li>React</li>
               <li>Javascript</li>
               <li>C++</li>
               <li>Python</li>
@@ -43,8 +43,9 @@ export class Cards extends React.Component {
               <li>Agile</li>
               <li>Scrum</li>
               <li>Product management</li>
-              <li>Big data</li>
+              <li>Communication across technical and non-technical stakeholders</li>
               <li>Organizational change</li>
+              <li>Big data</li>
             </ul>
           </div>
         </div>
