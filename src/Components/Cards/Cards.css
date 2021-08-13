@@ -23,10 +23,10 @@
 }
 
 .cards-child:hover {
-  -webkit-transform: scale(1.1) rotate(0deg);
-  transform: scale(1.1) rotate(0deg);
-  /* background-color: hsla(259, 35%, 92%); */
-  background-image: linear-gradient(to bottom right, #7130fb, #ab27a9, #f06a6b);
+  -webkit-transform: scale(1.08) rotate(0deg);
+  transform: scale(1.08) rotate(0deg);
+  background-color: hsla(259, 35%, 92%);
+  /* background-image: linear-gradient(to bottom right, #7130fb, #ab27a9, #f06a6b); */
 }
 
 .cards-child img {

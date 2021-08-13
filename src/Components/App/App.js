@@ -17,11 +17,8 @@ function App() {
       <Intro />
       <MarqueeTicker />
       <Cards />
-      <div className="section-text">
-        <p className="section-description">
-        Below is a selection of <span>recent projects</span>. My work has primarily been focused in front-end development, iOS apps, and UX/UI design.      
-        </p>
-        </div>
+    
+
       <Projects />
       <Footer />
     </div>

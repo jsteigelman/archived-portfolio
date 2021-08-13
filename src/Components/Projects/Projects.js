@@ -30,6 +30,7 @@ export class Projects extends React.Component {
     return (
       <div className="projects-container-grid">
         <div className="projects-container">
+        <h1>Recent Projects</h1>
           <div className="projects-section projects-wordbuzz">
             <div className="projects-content">
               <div className="projects-text">
