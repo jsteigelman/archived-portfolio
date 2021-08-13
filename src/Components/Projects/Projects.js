@@ -108,7 +108,8 @@ export class Projects extends React.Component {
 
           <div className="projects-youtube">
             <iframe
-              width="640"
+              // width="640"
+              width="100%"
               height="385"
               src="https://www.youtube.com/embed/auQ3POqs-F8"
               title="YouTube video player"

@@ -5,6 +5,7 @@ export class Cards extends React.Component {
   render() {
     return (
         <div className="cards-container">
+
           <div className="cards-child child-one">
             <h4>Programming</h4>
             <ul>
@@ -29,6 +30,7 @@ export class Cards extends React.Component {
               <li>Adobe Photoshop</li>
             </ul>
           </div>
+
           <div className="cards-child child-three">
             <h4>Certifications</h4>
             <ul>

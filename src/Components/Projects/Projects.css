@@ -84,6 +84,8 @@ a:active {
 .projects-text {
   text-align: left;
   margin: 0 auto;
+  grid-column-start: 4;
+  grid-column-end: 10;
 }
 
 .projects-text-wordbuzz {
@@ -96,6 +98,7 @@ a:active {
 .projects-youtube {
   text-align: center;
   margin: 120px auto 40px auto;
+
 }
 
 .projects-youtube h5 {
