@@ -7,7 +7,7 @@ export class Cards extends React.Component {
     return (
         <div className="cards-container">
           <div className="cards-child child-one">
-          <img src={cardsIcon} />
+          <img src={cardsIcon} alt="arrow icon" />
             <h4>Programming</h4>
             <ul>
               <li>React</li>
@@ -20,7 +20,7 @@ export class Cards extends React.Component {
             </ul>
           </div>
           <div className="cards-child child-two">
-          <img src={cardsIcon} />
+          <img src={cardsIcon} alt="arrow icon" />
             <h4>Technologies</h4>
             <ul>
               <li>Figma</li>
@@ -34,7 +34,7 @@ export class Cards extends React.Component {
           </div>
 
           <div className="cards-child child-three">
-          <img src={cardsIcon} />
+          <img src={cardsIcon} alt="arrow icon" />
             <h4>Certifications</h4>
             <ul>
               <li>CodePath's iOS Development</li>
@@ -43,7 +43,7 @@ export class Cards extends React.Component {
             </ul>
           </div>
           <div className="cards-child child-four">
-          <img src={cardsIcon} />
+          <img src={cardsIcon} alt="arrow icon" />
             <h4>Experience</h4>
             <ul>
               <li>Agile</li>
