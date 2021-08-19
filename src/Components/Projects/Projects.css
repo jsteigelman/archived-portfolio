@@ -11,8 +11,19 @@
 
 .projects-container-grid h1 {
   font-size: 60px;
-  padding-bottom: 36px;
+  padding-top: 60px;
+  /* padding-bottom: 36px; */
   margin: 0;
+  grid-column-start: 1;
+  grid-column-end: 13;
+}
+
+.projects-container-grid h2 {
+  font-size: 28px;
+  font-weight: 400;
+  padding-top: 0px;
+  grid-column-start: 1;
+  grid-column-end: 13;
 }
 
 .projects-container {
@@ -200,5 +211,15 @@ a:active {
   .projects-container-grid {
     padding-top: 0;
     padding-bottom: 80px;
+  }
+
+  .projects-container-grid h1 {
+    font-size: 40px;
+  }
+
+  .projects-container-grid h2 {
+    font-size: 24px;
+    grid-column-start: 2;
+    grid-column-end: 12;
   }
 }

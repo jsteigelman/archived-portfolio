@@ -2,7 +2,6 @@ import "./App.css";
 import { Intro } from "./../Intro/Intro.js";
 import { Cards } from "./../Cards/Cards.js";
 import { Projects } from "./../Projects/Projects.js";
-import { Footer } from "./../Footer/Footer.js";
 import { MarqueeTicker } from "./../Marquee/Marquee.js";
 import ReactGA from 'react-ga';
 
@@ -17,10 +16,10 @@ function App() {
       <Intro />
       <MarqueeTicker />
       <Cards />
-    
+
+      <div style={{ borderTop: "1px solid #E3E3E3 ", marginLeft: 64, marginRight: 64 }}></div>
 
       <Projects />
-      <Footer />
     </div>
   );
 }

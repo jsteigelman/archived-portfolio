@@ -3,7 +3,7 @@
   flex-direction: row;
   width: calc(100vw - 88px);
   padding: 80px 44px;
-  text-align: left;
+  text-align: center;
 }
 
 .cards-child {
@@ -18,27 +18,19 @@
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
   -webkit-transition: -webkit-transform 0.4s;
-
-
 }
 
-/* .cards-child:hover {
-  -webkit-transform: scale(1.08) rotate(0deg);
-  transform: scale(1.08) rotate(0deg);
-  background-color: hsla(259, 35%, 92%);
-} */
-
 .cards-child img {
-  width: 140px;
-  height: auto;
-  margin-top: 0;
+  width: 40px;
+  height: auto; 
+  margin: 0 auto;
 }
 
 .cards-child h4 {
-  font-size: 28px;
-  font-weight: 800;
+  font-size: 21px;
+  font-weight: 700;
   margin: 0;
-  padding-top: 40px;
+  padding-top: 36px;
 }
 
 .cards-child ul {
@@ -53,7 +45,6 @@
 }
 
 .cards-child li {
-  /* font-size: 22px; */
   font-size: 21px;
   line-height: 120%;
   font-weight: 400;
@@ -85,9 +76,6 @@
 }
 
 @media only screen and (max-width: 1016px) {
-  .cards-child h4 {
-    font-size: 22px;  
-  }
 
   .cards-child li {
     font-size: 18px;
@@ -99,27 +87,20 @@
   .cards-container {
     height: auto;
     overflow-x: auto;
+
+    flex-direction: column;
+    padding-top: 40px;
   }
 
   .cards-child {
-    margin: 24px;
-    /* padding: 40px; */
-    background-color: hsla(259, 35%, 92%);
-
+    margin: 24px 0;
   }
 
   .child-four {
-    margin-right: 40px;
-  }
-
-  .cards-child h4 {
-    /* font-size: 22px; */
-    /* padding: 0 0 24px 0; */
-    
+    margin-bottom: 0;
   }
 
   .cards-child li {
     font-size: 16px;
-    /* padding: 6px 0; */
   }
 }

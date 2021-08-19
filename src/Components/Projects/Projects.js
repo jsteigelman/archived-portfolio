@@ -29,8 +29,9 @@ export class Projects extends React.Component {
   render() {
     return (
       <div className="projects-container-grid">
+      <h1>Recent Projects</h1>
+      <h2>A selection of my latest work in iOS and front-end development.</h2>
         <div className="projects-container">
-        <h1>Recent Projects</h1>
           <div className="projects-section projects-wordbuzz">
             <div className="projects-content">
               <div className="projects-text">
