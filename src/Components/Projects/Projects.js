@@ -135,6 +135,8 @@ export class Projects extends React.Component {
           <Project title="tiptop" />
           <Project title="vmoh" />
           <Project title="artist_website" />
+          <Project title="todos_app" />
+          <Project title="notes_app" />
           <Project title="hangman_game" />
           <Project title="sunnyside_agency" />
           <Project title="memory_game" />

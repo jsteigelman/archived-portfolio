@@ -5,6 +5,9 @@ import hangman_image from "./../Components/Images/projects-hangman.png";
 import sunnyside_image from "./../Components/Images/projects-sunnyside.png";
 import memory_image from "./../Components/Images/projects-memory.png";
 import tiptop_image from "./../Components/Images/projects-tiptop.png";
+import notes_app_image from "./../Components/Images/notes-app.png";
+import todos_image from "./../Components/Images/projects-todos.png";
+
 
 export const getProject = () => {
     return {
@@ -111,6 +114,36 @@ export const getProject = () => {
             button_two: {
                 title: "GitHub",
                 url: "https://github.com/greencreate/Light-Sound-Memory-Game"
+            }
+        },
+        notes_app: {
+            language: "JavaScript",
+            title: "Notes Web App",
+            description: "Capture your ideas so nothing falls through the cracks with this convenient note-taking app.",
+            projectImage: notes_app_image,
+            imageStyle: "website-image",
+            button_one: {
+                title: "Live Site",
+                url: "https://notes-app-steigelman.netlify.app/"
+            },
+            button_two: {
+                title: "GitHub",
+                url: "https://github.com/greencreate/notes-app"
+            }
+        },
+        todos_app: {
+            language: "JavaScript",
+            title: "To-Do List",
+            description: "Stay organized and manage your day-to-day tasks with this convenient tool.",
+            projectImage: todos_image,
+            imageStyle: "website-image",
+            button_one: {
+                title: "Live Site",
+                url: "https://todos-steigelman.netlify.app/"
+            },
+            button_two: {
+                title: "GitHub",
+                url: "https://github.com/greencreate/todos"
             }
         },
 
