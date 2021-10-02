@@ -27,6 +27,10 @@ export class MarqueeTicker extends React.Component {
           <MarqueeText />
           <MarqueeText />
           <MarqueeText />
+          <MarqueeText />
+          <MarqueeText />
+          <MarqueeText />
+          <MarqueeText />
         </Marquee>
       </div>
     );
