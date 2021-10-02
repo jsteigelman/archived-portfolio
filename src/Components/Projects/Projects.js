@@ -81,11 +81,6 @@ export class Project extends React.Component {
           <div
             className={`project-image ${projectData[currentProject].imageStyle}`}
           >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href={projectData[currentProject].title}
-            >
               <InView threshold={0.25}>
                 {({ ref, inView }) => (
                   <motion.img
@@ -98,7 +93,6 @@ export class Project extends React.Component {
                   />
                 )}
               </InView>
-            </a>
           </div>
           <div className="projects-text">
             <h6>{projectData[currentProject].language}</h6>
