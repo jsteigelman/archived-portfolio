@@ -205,6 +205,17 @@ a:active {
   max-width: 50%;
 }
 
+@media only screen and (max-width: 500px) {
+  .project-link-container {
+    flex-direction: column;
+  }
+
+  .projects-button {
+    margin-right: 0;
+  }
+  
+}
+
 @media only screen and (max-width: 769px) {
   .projects-container {
     grid-column-start: 2;

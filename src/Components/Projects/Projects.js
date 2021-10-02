@@ -35,7 +35,6 @@ export class ProjectButton extends React.Component {
     }
 
     return (
-      <div className="project-link-container">
       <button
         className="projects-button"
 
@@ -53,7 +52,6 @@ export class ProjectButton extends React.Component {
         {projectData[currentProject][currentButton].title}
         </a>
       </button>
-    </div>
     )
   }
 }
