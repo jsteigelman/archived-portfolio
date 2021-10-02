@@ -9,6 +9,7 @@ import wordbuzz_image_three from "./../Images/projects-wordbuzz-3.png";
 import memory_image from "./../Images/projects-memory.png";
 import tiptop_image from "./../Images/projects-tiptop.png";
 import tiptop_ipad from "./../Images/projects-tiptop-ipad.png";
+import hangman_image from "./../Images/projects-hangman.png";
 import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import ReactGA from 'react-ga';
@@ -274,6 +275,63 @@ export class Projects extends React.Component {
               </a>
             </div>
           </div>
+
+
+
+          <div className="projects-section projects-hangman-game">
+          <div>
+            <div className="projects-text">
+              <h6>JavaScript</h6>
+              <h5>Hangman Game</h5>
+              <p>
+              This is a version of the popular word guessing game Hangman.
+              </p>
+              <div className="project-link-container">
+                <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Hangman Game Live Site Button", "Button")}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://hangman-game-steigelman.netlify.app/"
+                  >
+                    Live Site
+                  </a>
+                </button>
+                <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Hangman Game GitHub Button", "Button")}>
+                  <a
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href="https://github.com/greencreate/hangman-game"
+                  >
+                    Github
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div className="project-image website-image">
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://hangman-game-steigelman.netlify.app/"
+            >
+              <InView threshold={0.25}>
+                {({ ref, inView }) => (
+                  <motion.img
+                    ref={ref}
+                    initial={{ opacity: 0 }}
+                    animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                    transition={{ duration: 0.8 }}
+                    src={hangman_image}
+                    alt="preview of project website"
+                  />
+                )}
+              </InView>
+            </a>
+          </div>
+        </div>
+
+
+
 
           <div className="projects-section projects-sunnyside">
             <div>
