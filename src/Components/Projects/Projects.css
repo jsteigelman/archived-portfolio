@@ -85,6 +85,10 @@ a:active {
   box-shadow: 0px 2px 2px 1px hsla(0, 0%, 0%, 0.2);
 }
 
+.mobile-app-image img {
+  box-shadow: none;
+}
+
 .projects-section a,
 a:visited,
 a:active {
@@ -164,6 +168,9 @@ a:active {
 
 .project-link-container {
   padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 .projects-wordbuzz-images {

@@ -1,21 +1,11 @@
 import React from "react";
 import "./Projects.css";
-import artwork_image from "./../Images/projects-artwork.png";
-import vmoh_image from "./../Images/projects-vmoh.png";
-import sunnyside_image from "./../Images/projects-sunnyside.png";
-import wordbuzz_image_one from "./../Images/projects-wordbuzz-1.png";
-import wordbuzz_image_two from "./../Images/projects-wordbuzz-2.png";
-import wordbuzz_image_three from "./../Images/projects-wordbuzz-3.png";
-import memory_image from "./../Images/projects-memory.png";
-import tiptop_image from "./../Images/projects-tiptop.png";
-import tiptop_ipad from "./../Images/projects-tiptop-ipad.png";
-import hangman_image from "./../Images/projects-hangman.png";
 import { InView } from "react-intersection-observer";
 import { motion } from "framer-motion";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
+import { getProject } from "./../../Utilities/Functions.js";
 
-
-export class Projects extends React.Component {
+export class ProjectButton extends React.Component {
 
     // handle button click
     eventTrack = (category, action, label) => {
@@ -23,296 +13,78 @@ export class Projects extends React.Component {
         category: category,
         action: action,
         label: label,
-      })
-    }
-
+      });
+    };
 
   render() {
+
+    const projectData = getProject();
+
+    let currentProject = "";
+    if (this.props.title !== null) {
+      currentProject = this.props.title;
+    }
+
+    let currentButton = "";
+    if (this.props.buttonNum !== null) {
+      currentButton = this.props.buttonNum;
+    }
+
+    if (projectData[currentProject][currentButton].title === null) {
+      return
+    }
+
     return (
-      <div className="projects-container-grid">
-      <h1>Recent Projects</h1>
-      <h2>A selection of my latest work in iOS and front-end development.</h2>
-        <div className="projects-container">
-          <div className="projects-section projects-wordbuzz">
-            <div className="projects-content">
-              <div className="projects-text">
-                <h6>Swift</h6>
-                <h5>WordBuzz</h5>
-                <p>
-                  WordBuzz is a gamified vocabulary building app. Co-developed
-                  in a team of three using WordsAPI and a custom backend
-                  database. Selected as one of ten finalists for iOS at
-                  CodePath’s National Demo Day out of over 125 groups.{" "}
-                </p>
-                <div className="project-link-container">
-                  <button className="projects-button" onClick={this.eventTrack.bind("YouTube Site", "WordBuzz YouTube Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://www.youtube.com/watch?v=PYqlwjb9euI&t=1s"
-                    >
-                      YouTube
-                    </a>
-                  </button>
-                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "WordBuzz GitHub Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/codepath-ios-team/Wordbuzz"
-                    >
-                      Github
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="project-image">
-              <div className="projects-wordbuzz-images">
-                <InView threshold={0.25}>
-                  {({ ref, inView }) => (
-                    <motion.img
-                      ref={ref}
-                      initial={{ opacity: 0 }}
-                      animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      src={wordbuzz_image_one}
-                      alt="preview of app project"
-                    />
-                  )}
-                </InView>
-                <InView threshold={0.25}>
-                  {({ ref, inView }) => (
-                    <motion.img
-                      ref={ref}
-                      initial={{ opacity: 0 }}
-                      animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      src={wordbuzz_image_two}
-                      alt="preview of app project"
-                    />
-                  )}
-                </InView>
-                <InView threshold={0.25}>
-                  {({ ref, inView }) => (
-                    <motion.img
-                      ref={ref}
-                      initial={{ opacity: 0 }}
-                      animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      src={wordbuzz_image_three}
-                      alt="preview of app project"
-                    />
-                  )}
-                </InView>
-              </div>
-            </div>
-          </div>
+      <div className="project-link-container">
+      <button
+        className="projects-button"
 
-          <div className="projects-youtube">
-            <iframe
-              // width="640"
-              width="100%"
-              height="385"
-              src="https://www.youtube.com/embed/auQ3POqs-F8"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-              <h5>Watch the app demo of WordBuzz on YouTube</h5>
-          </div>
+        // onClick={this.eventTrack.bind(
+        //   {projectData[currentProject][currentButton].title},
+        //   {projectData[currentProject].title},
+        //   "Button"
+        // )}
+      >
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href={projectData[currentProject][currentButton].url}
+        >
+        {projectData[currentProject][currentButton].title}
+        </a>
+      </button>
+    </div>
+    )
+  }
+}
 
-          <div className="projects-section projects-tiptop">
-            <div>
-              <div className="projects-text">
-                <h6>Swift</h6>
-                <h5>TipTop</h5>
-                <p>
-                  TipTop is a tip calculator app that makes calculating tips
-                  quick and easy. Simply enter the bill amount to instantly see
-                  the calculated tip and the total cost including tip. You can
-                  also adjust the tip percentage and conveniently split the bill
-                  amongst friends.{" "}
-                </p>
-                <div className="project-link-container">
-                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "TipTop Github Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/greencreate/tiptop"
-                    >
-                      Github
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="project-image">
-              <div className="projects-tiptop-images">
-                <InView threshold={0.25}>
-                  {({ ref, inView }) => (
-                    <motion.img
-                      ref={ref}
-                      initial={{ opacity: 0 }}
-                      animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      className="tiptop-iphone"
-                      src={tiptop_image}
-                      alt="preview of app project"
-                    />
-                  )}
-                </InView>
-                <InView threshold={0.25}>
-                  {({ ref, inView }) => (
-                    <motion.img
-                      ref={ref}
-                      initial={{ opacity: 0 }}
-                      animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      className="tiptop-ipad"
-                      src={tiptop_ipad}
-                      alt="preview of app project"
-                    />
-                  )}
-                </InView>
-              </div>
-            </div>
-          </div>
+export class Project extends React.Component {
 
-          <div className="projects-section projects-vmoh">
-            <div>
-              <div className="project-image website-image">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://vmoholo.org/"
-                >
-                  <InView threshold={0.25}>
-                    {({ ref, inView }) => (
-                      <motion.img
-                        ref={ref}
-                        initial={{ opacity: 0 }}
-                        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                        transition={{ duration: 0.8 }}
-                        src={vmoh_image}
-                        alt="preview of project website"
-                      />
-                    )}
-                  </InView>
-                </a>
-              </div>
-              <div className="projects-text">
-                <h6>React</h6>
-                <h5>The Virtual Museum of Holography Website</h5>
-                <p>
-                  Designed and developed the website for The Virtual Museum of
-                  Holography. New updates to the website coming soon.
-                </p>
-                <div className="project-link-container">
-                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "VMOH Live Site Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://vmoholo.org/"
-                    >
-                      Live Site
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+  render() {
+    const projectData = getProject();
 
-          <div className="projects-section projects-artwork">
-            <div>
-              <div className="projects-text">
-                <h6>React</h6>
-                <h5>Artist Website</h5>
-                <p>
-                  I’m an artist turned developer. This is a website I created to
-                  showcase my artwork.
-                </p>
-                <div className="project-link-container">
-                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Artist Live Site Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://www.joeysteigelman.com/"
-                    >
-                      Live Site
-                    </a>
-                  </button>
-                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Artist GitHub Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/greencreate/artwork"
-                    >
-                      Github
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="project-image website-image">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://www.joeysteigelman.com/"
-              >
-                <InView threshold={0.25}>
-                  {({ ref, inView }) => (
-                    <motion.img
-                      ref={ref}
-                      initial={{ opacity: 0 }}
-                      animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      src={artwork_image}
-                      alt="preview of project website"
-                    />
-                  )}
-                </InView>
-              </a>
-            </div>
-          </div>
+    let currentProject = "";
+    if (this.props.title !== null) {
+      currentProject = this.props.title;
+    }
 
+    const getButton = (projectTitle, buttonNumber) => {
+      if (projectData[projectTitle][buttonNumber].title !== "") {
+        console.log(projectData[projectTitle][buttonNumber].title)
+        return <ProjectButton title={projectTitle} buttonNum={buttonNumber} />
+      } 
+    }
 
-
-          <div className="projects-section projects-hangman-game">
-          <div>
-            <div className="projects-text">
-              <h6>JavaScript</h6>
-              <h5>Hangman Game</h5>
-              <p>
-              This is a version of the popular word guessing game Hangman.
-              </p>
-              <div className="project-link-container">
-                <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Hangman Game Live Site Button", "Button")}>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://hangman-game-steigelman.netlify.app/"
-                  >
-                    Live Site
-                  </a>
-                </button>
-                <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Hangman Game GitHub Button", "Button")}>
-                  <a
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    href="https://github.com/greencreate/hangman-game"
-                  >
-                    Github
-                  </a>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div className="project-image website-image">
+    return (
+      <div className="projects-section">
+        <div>
+          <div
+            className={`project-image ${projectData[currentProject].imageStyle}`}
+          >
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://hangman-game-steigelman.netlify.app/"
+              href={projectData[currentProject].title}
             >
               <InView threshold={0.25}>
                 {({ ref, inView }) => (
@@ -321,125 +93,59 @@ export class Projects extends React.Component {
                     initial={{ opacity: 0 }}
                     animate={inView ? { opacity: 1 } : { opacity: 0 }}
                     transition={{ duration: 0.8 }}
-                    src={hangman_image}
-                    alt="preview of project website"
+                    src={projectData[currentProject].projectImage}
+                    alt={projectData[currentProject].title}
                   />
                 )}
               </InView>
             </a>
           </div>
+          <div className="projects-text">
+            <h6>{projectData[currentProject].language}</h6>
+            <h5>{projectData[currentProject].title}</h5>
+            <p>{projectData[currentProject].description}</p>
+            <div className="project-link-container">
+            {getButton(currentProject, "button_one")}
+            {getButton(currentProject, "button_two")}
+            </div>
+          </div>
         </div>
+      </div>
+    );
+  }
+}
 
+export class Projects extends React.Component {
 
+  render() {
+    return (
+      <div className="projects-container-grid">
+        <h1>Recent Projects</h1>
+        <h2>A selection of my latest work in iOS and front-end development.</h2>
+        <div className="projects-container">
+  
+        <Project title="wordbuzz" />
 
-
-          <div className="projects-section projects-sunnyside">
-            <div>
-              <div className="project-image website-image">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://steigelman-sunnyside.netlify.app/"
-                >
-                  <InView threshold={0.25}>
-                    {({ ref, inView }) => (
-                      <motion.img
-                        ref={ref}
-                        initial={{ opacity: 0 }}
-                        animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                        transition={{ duration: 0.8 }}
-                        src={sunnyside_image}
-                        alt="preview of project website"
-                      />
-                    )}
-                  </InView>
-                </a>
-              </div>
-              <div className="projects-text">
-                <h6>HTML + CSS + Javascript</h6>
-                <h5>Sunnyside Agency Landing Page</h5>
-                <p>
-                  This is my solution to the Sunnyside agency landing page
-                  challenge on Frontend Mentor. Frontend Mentor provides
-                  front-end challenges that include professional web designs.
-                </p>
-                <div className="project-link-container">
-                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Sunnyside Live Site Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://steigelman-sunnyside.netlify.app/"
-                    >
-                      Live Site
-                    </a>
-                  </button>
-                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Sunnyside GitHub Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/greencreate/sunnyside-agency-landing-page"
-                    >
-                      Github
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div className="projects-youtube">
+            <iframe
+              // width="640"
+              width="100%"
+              height="385"
+              src="https://www.youtube.com/embed/auQ3POqs-F8"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            <h5>Watch the app demo of WordBuzz on YouTube</h5>
           </div>
 
-          <div className="projects-section projects-memory">
-            <div className="projects-content">
-              <div className="projects-text">
-                <h6>HTML + CSS + Javascript</h6>
-                <h5>Light and Sound Memory Game</h5>
-                <p>
-                  This is a memory game in which players must repeat random
-                  sequences of lights and sounds by pressing buttons in the
-                  correct order.
-                </p>
-                <div className="project-link-container">
-                  <button className="projects-button" onClick={this.eventTrack.bind("Live Site", "Memory Game Live Site Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://flaxen-therapeutic-clarinet.glitch.me/"
-                    >
-                      Live Site
-                    </a>
-                  </button>
-                  <button className="projects-button" onClick={this.eventTrack.bind("GitHub", "Memory Game GitHub Button", "Button")}>
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      href="https://github.com/greencreate/Light-Sound-Memory-Game"
-                    >
-                      Github
-                    </a>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="project-image website-image">
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://flaxen-therapeutic-clarinet.glitch.me/"
-              >
-                <InView threshold={0.25}>
-                  {({ ref, inView }) => (
-                    <motion.img
-                      ref={ref}
-                      initial={{ opacity: 0 }}
-                      animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                      transition={{ duration: 0.8 }}
-                      src={memory_image}
-                      alt="preview of project website"
-                    />
-                  )}
-                </InView>
-              </a>
-            </div>
-          </div>
+          <Project title="tiptop" />
+          <Project title="vmoh" />
+          <Project title="artist_website" />
+          <Project title="hangman_game" />
+          <Project title="sunnyside_agency" />
+          <Project title="memory_game" />
         </div>
       </div>
     );
