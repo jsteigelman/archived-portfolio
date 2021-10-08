@@ -27,7 +27,7 @@ function App() {
 
       <div className="section-container-grid" id="navigation-work">
         <h1>Featured Work</h1>
-        <h2>A selection of my latest work in front-end development.</h2>
+        <h2>A selection of my work in front-end development.</h2>
         <div className="section-container">
           <Project title="vmoh" />
           <Project title="artist_website" />
