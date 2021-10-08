@@ -1,3 +1,19 @@
+.nav-link-container-outer {
+  display: none;
+}
+
+.nav-link-container-inner {
+  background-color: white;
+  color: black;
+  width: calc(100% - 24px);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 68px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
 .nav-container {
   background-color: black;
   color: white;
@@ -13,8 +29,8 @@
   align-items: center;
 
   width: 100%;
+  width: calc(100% - 24px);
   height: 20px;
-  padding: 20px 0;
   padding: 24px 12px;
 
   position: absolute;
@@ -25,7 +41,89 @@
   display: none;
 }
 
+.links-nav-container-outer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-icon-container {
+  display: block;
+}
+
+#navBackground.show {
+  display: block;
+}
+
+#navBackground.hide {
+  display: none;
+}
+
+#navLinks.show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+#navLinks.hide {
+  display: none;
+}
+
+.nav-background {
+  display: none;
+  background-color: transparent;
+  background-color: hsla(259, 96%, 59%, 0.86);
+
+  z-index: -1;
+
+  position: fixed;
+  padding: 0;
+  margin: 0;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.nav-link-container-outer a {
+  font-size: 32px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  padding: 32px 0;
+  text-decoration: none;
+
+}
+
+
+
 @media only screen and (min-width: 770px) {
+
+  a.mobile-only {
+    display: none;
+  }
+
+
+
+  .nav-link-container-outer {
+    display: block;
+    float: right;
+  }
+
+  .nav-link-container-inner {
+    background-color: transparent;
+    color: white;
+    flex-direction: row;
+  }
+
+  .nav-icon-container {
+    display: none;
+  }
+
   .nav-container {
     font-size: 28px;
     width: calc(100vw - 88px);
@@ -46,7 +144,11 @@
     font-size: 28px;
     font-weight: 500;
     border-radius: 90px;
+
+    right: 44px;
+    position: absolute;
   }
+
 
   .nav-button a,
   a:hover,
