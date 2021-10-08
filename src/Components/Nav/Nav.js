@@ -36,13 +36,13 @@ export class Links extends React.Component {
       <div>
 
         <div class="links-nav-container-outer">
-          <a
+          <button
             href="javascript:void(0);"
             class="nav-icon-container"
             onClick={toggleNavDropDown}
           >
             <img src={nav_icon} alt="mobile drop-down menu icon" />
-          </a>
+          </button>
 
           <div
             class="nav-link-container-outer"

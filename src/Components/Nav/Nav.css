@@ -49,6 +49,8 @@
 
 .nav-icon-container {
   display: block;
+  background-color: transparent;
+  border: none;
 }
 
 #navBackground.show {
