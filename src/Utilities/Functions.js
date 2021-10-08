@@ -17,6 +17,8 @@ export const getProject = () => {
             description: "WordBuzz is a gamified vocabulary building app. Co-developed in a team of three using WordsAPI and a custom backend database. Selected as one of ten finalists for iOS at CodePath’s National Demo Day out of over 125 groups.",
             projectImage: wordbuzz_image,
             imageStyle: "mobile-app-image",
+            videoUrl: "https://www.youtube.com/embed/auQ3POqs-F8",
+            videoDescription: "Watch our 3 minute app demo on YouTube!",
             button_one: {
                 title: "YouTube",
                 url: "https://www.youtube.com/watch?v=PYqlwjb9euI&t=1s"

@@ -13,8 +13,8 @@ export class MarqueeText extends React.Component {
 export class MarqueeTicker extends React.Component {
   render() {
     return (
-      <div className="marquee">
-        <Marquee loop={0} gradient={false} speed={90}>
+      <div className="home-marquee">
+        <Marquee loop={0} gradient={false} speed={90} >
           <MarqueeText />
           <MarqueeText />
           <MarqueeText />
