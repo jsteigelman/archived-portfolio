@@ -10,6 +10,8 @@
 .projects-container-grid h1 {
   font-size: 60px;
   padding-top: 60px;
+  padding-top: 80px;
+
   margin: 0;
   grid-column-start: 1;
   grid-column-end: 13;
@@ -18,7 +20,8 @@
 .projects-container-grid h2 {
   font-size: 28px;
   font-weight: 400;
-  padding-top: 0px;
+  padding-top: 0;
+  margin-bottom: 0;
   grid-column-start: 1;
   grid-column-end: 13;
 }
