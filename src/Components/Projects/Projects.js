@@ -34,15 +34,14 @@ export class ProjectButton extends React.Component {
     }
 
     return (
-      <button className="projects-button">
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          href={projectData[currentProject][currentButton].url}
-        >
+      <a
+      className="projects-button"
+        target="_blank"
+        rel="noopener noreferrer"
+        href={projectData[currentProject][currentButton].url}
+      >
           {projectData[currentProject][currentButton].title}
-        </a>
-      </button>
+      </a>
     );
   }
 }
@@ -69,7 +68,12 @@ export class ProjectVideo extends React.Component {
             allowFullScreen
           ></iframe>
         </div>
-        <Marquee className="projects-youtube-text" gradient={true} pauseOnHover={true} pauseOnClick={true}>
+        <Marquee
+          className="projects-youtube-text"
+          gradient={true}
+          pauseOnHover={true}
+          pauseOnClick={true}
+        >
           {projectData[currentProject].videoDescription}
         </Marquee>
       </div>

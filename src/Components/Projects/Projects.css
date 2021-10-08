@@ -51,7 +51,7 @@
   margin-top: 0;
 }
 
-.projects-button {
+a.projects-button {
   color: white;
   background-color: hsla(259, 96%, 59%);
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
@@ -69,11 +69,11 @@
   padding: 12px 32px;
 }
 
-.projects-button a,
-a:hover,
-a:visited,
-a:active {
-  color: inherit;
+a.projects-button,
+a.projects-button:hover,
+a.projects-button:visited,
+a.projects-button:active {
+  color: white;
   text-decoration: none;
 }
 
@@ -226,7 +226,7 @@ h5.projects-youtube-text {
     flex-direction: column;
   }
 
-  .projects-button {
+  a.projects-button {
     margin-right: 0;
   }
   
