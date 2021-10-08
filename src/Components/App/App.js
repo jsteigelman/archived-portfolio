@@ -10,10 +10,10 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
-    <div className="App" id="navigation-contact">
+    <div className="App" id="contact">
       <Intro />
       <MarqueeTicker />
-      <span id="navigation-skills" ></span>
+      <span id="skills" ></span>
 
       <Cards />
 
@@ -25,7 +25,7 @@ function App() {
         }}
       ></div>
 
-      <div className="section-container-grid" id="navigation-work">
+      <div className="section-container-grid" id="featured-work">
         <h1>Featured Work</h1>
         <h2>A selection of my work in front-end development.</h2>
         <div className="section-container">
@@ -42,7 +42,7 @@ function App() {
       }}
     ></div>
 
-      <div className="section-container-grid" id="navigation-projects">
+      <div className="section-container-grid" id="recent-projects">
         <h1>Recent Projects</h1>
         <h2>
           A selection of my latest projects in iOS and front-end development.

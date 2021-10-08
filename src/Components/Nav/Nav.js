@@ -50,10 +50,10 @@ export class Links extends React.Component {
             onClick={toggleNavDropDown}
           >
             <div class="nav-link-container-inner">
-              <a className="mobile-only" href="#navigation-skills">Skills</a>
-              <a className="mobile-only" href="#navigation-work">Featured Work</a>
-              <a className="mobile-only" href="#navigation-projects">Recent Projects</a>
-              <a className="mobile-only" href="#navigation-contact">Contact</a>
+              <a className="mobile-only" href="#skills">Skills</a>
+              <a className="mobile-only" href="#featured-work">Featured Work</a>
+              <a className="mobile-only" href="#recent-projects">Recent Projects</a>
+              <a className="mobile-only" href="#contact">Contact</a>
             </div>
           </div>
         </div>
