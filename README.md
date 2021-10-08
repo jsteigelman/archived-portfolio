@@ -10,7 +10,3 @@ This is my developer portfolio website that I built in React.
 - React
 - Flexbox
 - Responsive design
-
-## Website Walkthrough GIF
-
-<img src="https://i.imgur.com/dzGY5NB.gif" width="600" />
