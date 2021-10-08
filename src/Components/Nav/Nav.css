@@ -9,7 +9,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 68px;
-  padding: 20px 0;
+  padding: 48px 0;
   display: flex;
   flex-direction: column;
 }
@@ -94,13 +94,12 @@
 }
 
 .nav-link-container-outer a {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 600;
   color: black;
   text-align: center;
-  padding: 32px 0;
+  padding: 24px 0;
   text-decoration: none;
-
 }
 
 
