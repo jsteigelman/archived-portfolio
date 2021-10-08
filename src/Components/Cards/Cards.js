@@ -11,7 +11,7 @@ export class Cards extends React.Component {
             <h4>Programming</h4>
             <ul>
               <li>React</li>
-              <li>Javascript</li>
+              <li>JavaScript</li>
               <li>C++</li>
               <li>Python</li>
               <li>Swift</li>

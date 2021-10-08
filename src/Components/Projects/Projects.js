@@ -57,7 +57,7 @@ export class ProjectVideo extends React.Component {
     }
 
     return (
-      <div>
+      <div className="project-video-container">
         <div className="projects-youtube">
           <iframe
             width="100%"

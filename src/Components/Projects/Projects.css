@@ -254,7 +254,7 @@ h5.projects-youtube-text {
     grid-column-end: 12;
   }
 
-  .projects-youtube {
+  .project-video-container {
     display: none;
   }
 
