@@ -1,66 +1,58 @@
 .nav-container {
+  background-color: black;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+    sans-serif, Apple Color Emoji, Segoe UI Emoji;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  color: white;
-  width: calc(100vw - 88px);
-  height: 20px;
-  padding: 44px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 28px;
-  font-weight: 500;
   align-items: center;
+
+  width: 100%;
+  height: 20px;
+  padding: 20px 0;
+  padding: 24px 12px;
+
+  position: absolute;
+  z-index: 99;
 }
 
 .nav-button {
-  background-color: hsla(259, 96%, 59%);
-  border: none;
-  color: white;
-  padding: 12px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif, Apple Color Emoji, Segoe UI Emoji;
-  font-size: 28px;
-  font-weight: 500;
-  border-radius: 90px;
+  display: none;
 }
 
-.nav-button a,
-a:hover,
-a:visited,
-a:active {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media only screen and (max-width: 769px) {
+@media only screen and (min-width: 770px) {
   .nav-container {
-    /* display: none; */
-
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    column-gap: 32px;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 20px 0;
-    text-align: left;
-
-  }
-
-  .nav-container div {
-    grid-column-start: 1;
-    grid-column-end:12;
-    padding: 0 12px;
-  }
-
-  .nav-container {
-    font-size: 24px;
+    font-size: 28px;
+    width: calc(100vw - 88px);
+    padding: 44px;
+    position: relative;
   }
 
   .nav-button {
-    display: none;
+    background-color: hsla(259, 96%, 59%);
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+      sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    font-size: 28px;
+    font-weight: 500;
+    border-radius: 90px;
+  }
+
+  .nav-button a,
+  a:hover,
+  a:visited,
+  a:active {
+    color: inherit;
+    text-decoration: none;
   }
 }
