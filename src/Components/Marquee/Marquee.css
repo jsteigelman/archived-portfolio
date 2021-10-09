@@ -1,29 +1,16 @@
-.marquee {
-  /* width: 100%; */
+.home-marquee {
   height: 64px;
-  margin: 0 auto; 
+  background-color: hsla(259, 96%, 59%);
+
+}
+
+.home-marquee h1 {
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
     sans-serif, Apple Color Emoji, Segoe UI Emoji;
   font-size: 28px;
   font-weight: 500;
-  background-color: hsla(259, 96%, 59%);
-  /* display: inline-block; */
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
-
-
-}
-
-.marquee p {
-  padding-right: 6px;
-} 
-
-@media only screen and (max-width: 769px) {
-
-  /* div.marquee {
-      display: none
-
-    } */
-
+  text-align: left;
+  width: 100%;
+  margin: 0 auto; 
 }
