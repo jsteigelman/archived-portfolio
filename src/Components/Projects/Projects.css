@@ -124,15 +124,17 @@ a.projects-button {
   height: 100%;
 }
 
-h5.projects-youtube-text {
+.projects-youtube-text-marquee {
   color: hsla(244, 82%, 58%);
-  
-  font-size: 28px;
-  font-weight: 700;
+  color: white;
+  height: 64px;
+  background-color: black;
+  font-size: 24px;
+  font-weight: 800;
   text-align: left;
   line-height: 1.1;
   letter-spacing: 0em;
-  margin: 20px 0;
+  /* margin: 12px 0; */
 }
 
 

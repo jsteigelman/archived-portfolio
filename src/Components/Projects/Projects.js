@@ -69,8 +69,8 @@ export class ProjectVideo extends React.Component {
           ></iframe>
         </div>
         <Marquee
-          className="projects-youtube-text"
-          gradient={true}
+          className="projects-youtube-text-marquee"
+          gradient={false}
           pauseOnHover={true}
           pauseOnClick={true}
         >
