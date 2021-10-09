@@ -161,7 +161,7 @@
   a:hover,
   a:visited,
   a:active {
-    color: inherit;
+    color: white;
     text-decoration: none;
   }
 }
