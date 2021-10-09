@@ -20,9 +20,11 @@ export class Nav extends React.Component {
 
 export class Links extends React.Component {
   render() {
+
     function toggleNavDropDown() {
-      var x = document.getElementById("navLinks");
-      var y = document.getElementById("navBackground");
+      const x = document.getElementById("navLinks");
+      const y = document.getElementById("navBackground");
+
       if (x.style.display === "block") {
         x.classList.toggle("hide");
         y.classList.toggle("hide");

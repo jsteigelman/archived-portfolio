@@ -3,8 +3,8 @@
 }
 
 .nav-link-container-inner {
-  background-color: white;
-  color: black;
+  background-color: transparent;
+  color: white;
   width: calc(100% - 24px);
   margin-left: auto;
   margin-right: auto;
@@ -77,8 +77,7 @@
 
 .nav-background {
   display: none;
-  background-color: transparent;
-  background-color: hsla(259, 96%, 59%, 0.86);
+  background-color: hsla(259, 96%, 59%, 1);
 
   z-index: -1;
 
@@ -94,15 +93,20 @@
 }
 
 .nav-link-container-outer a {
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 600;
-  color: black;
-  text-align: center;
-  padding: 24px 0;
+  color: white;
+  text-align: left;
+  padding: 14px 0;
   text-decoration: none;
 }
 
-
+@media only screen and (min-width: 370px) {
+  .nav-link-container-outer a {
+    font-size: 48px;
+    padding: 20px 0;
+  }
+}
 
 @media only screen and (min-width: 770px) {
 
