@@ -69,10 +69,10 @@ a.projects-button {
   padding: 12px 32px;
 }
 
-a.projects-button,
-a.projects-button:hover,
-a.projects-button:visited,
-a.projects-button:active {
+.projects-button,
+.projects-button:visited,
+.projects-button:hover,
+.projects-button:active {
   color: white;
   text-decoration: none;
 }
