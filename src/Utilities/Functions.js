@@ -7,10 +7,26 @@ import memory_image from "./../Components/Images/projects-memory.png";
 import tiptop_image from "./../Components/Images/projects-tiptop.png";
 import notes_app_image from "./../Components/Images/notes-app.png";
 import todos_image from "./../Components/Images/projects-todos.png";
+import weather_app from "./../Components/Images/projects-weather.png";
 
 
 export const getProject = () => {
     return {
+        node_weather_app: {
+            language: "Node.js",
+            title: "Weather App",
+            description: "This is a weather app that uses Node.js, Express, and APIs from Mapbox and Weatherstack, to retrieve location and weather data.",
+            projectImage: weather_app,
+            imageStyle: "mobile-app-image",
+            button_one: {
+                title: "Live Site",
+                url: "https://steigelman-weather-application.herokuapp.com/"
+            },
+            button_two: {
+                title: "GitHub",
+                url: "https://github.com/jsteigelman/node-weather-app"
+            }
+        },
         wordbuzz: {
             language: "Swift",
             title: "WordBuzz",
@@ -20,7 +36,7 @@ export const getProject = () => {
             videoUrl: "https://www.youtube.com/embed/auQ3POqs-F8",
             videoDescription: "Watch our 3 minute app demo on YouTube!",
             button_one: {
-                title: "YouTube",
+                title: "Live Site",
                 url: "https://www.youtube.com/watch?v=PYqlwjb9euI&t=1s"
             },
             button_two: {

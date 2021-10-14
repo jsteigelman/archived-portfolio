@@ -45,9 +45,10 @@ function App() {
       <div className="section-container-grid" id="recent-projects">
         <h1>Recent Projects</h1>
         <h2>
-          A selection of my latest projects in iOS and front-end development.
+          A selection of my latest projects in iOS and full-stack development.
         </h2>
         <div className="section-container">
+        <Project title="node_weather_app" />
         <Project title="wordbuzz" />
         <ProjectVideo title="wordbuzz" />
         <Project title="tiptop" />
