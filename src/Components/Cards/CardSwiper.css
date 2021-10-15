@@ -11,6 +11,7 @@
 .swiper-slide {
     width: 300px;
     height: 408px;
+    /* background-color: blue; */
   }
 
 div.card-child {
@@ -22,6 +23,7 @@ div.card-child {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 0;
 }
 
 .swiper-slide img {
@@ -34,9 +36,10 @@ div.card-child {
     .swiper {
       width: 220px;
       padding: 12px;
-      /* margin: 0;
+      /* test below */
+      margin: 0;
       margin-left: auto;
-      margin-right: auto; */
+      margin-right: auto;
     }
 
     .swiper-slide {
@@ -45,6 +48,7 @@ div.card-child {
 
     div.card-child {
       width: 220px;
+      padding: 0;
     }
   }
 
@@ -74,8 +78,13 @@ div.card-child {
       width: 300px;
     }
 
+    div.swiper-slide.swiper-slide-active {
+      width: 300px;
+    }
+
     div.card-child {
       width: 300px;
+      padding: 0;
     }
 
   }
@@ -85,6 +94,8 @@ div.card-child {
       display: none;
     }
 
-    
+    div.card-child {
+      background-color: transparent;
+    }    
   }
 

@@ -1,5 +1,5 @@
 .cards-container {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   width: calc(100% - 88px);
@@ -54,9 +54,7 @@
   height: auto;
 }
 
-div.card-child {
-  /* max-width: 300px; */
-}
+
 
 @media only screen and (min-width: 840px) {
 
@@ -67,6 +65,21 @@ div.card-child {
   .cards-container {
     flex-direction: row;
     align-items: normal;
+  }
+
+  div.card-child {
+    background-color: white;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .cards-container {
+    display: flex;
   }
 
 }
