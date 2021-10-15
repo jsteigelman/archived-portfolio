@@ -5,6 +5,7 @@ import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 import './CardSwiper.css'
 
+
 // import Swiper core and required modules
 import SwiperCore, { EffectFlip, Pagination, Navigation } from 'swiper'
 
@@ -16,12 +17,13 @@ export class CardSwiper extends React.Component {
     return (
       <>
         <Swiper
-          effect={'flip'}
-          grabCursor={true}
+          // effect={'flip'}
+          // grabCursor={true}
           pagination={true}
           navigation={true}
           slidesPerView={1}
-          width={600}
+          spaceBetween={50}
+          // width={300}
           className="swiper mySwiper"
         >
           <SwiperSlide className='swiper-slide'>

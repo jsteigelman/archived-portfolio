@@ -22,7 +22,7 @@ div.card-child {
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     margin: 0;
 }
 
@@ -96,6 +96,10 @@ div.card-child {
 
     div.card-child {
       background-color: transparent;
+      justify-content: flex-start;
+      margin-left: 24px;
+      margin-right: 24px;
+      margin: 0 24px;
     }    
   }
 
