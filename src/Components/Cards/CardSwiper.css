@@ -1,28 +1,90 @@
+* {
+  --swiper-theme-color: #6B3EEC;
+}
+
 .swiper {
     width: 300px;
-    height: 300px;
-    padding: 50px;
+    height: 408px;
+    padding: 48px;
   }
   
 .swiper-slide {
     width: 300px;
-    height: 300px;
+    height: 408px;
   }
 
 div.card-child {
     background-color: #FAF9F9;
-    height: 300px;
+    border-radius: 16px;
     width: 300px;
+    height: 408px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border-radius: 12px;
-
 }
 
 .swiper-slide img {
-    width: 40px;
+    width: 48px;
     margin-left: auto;
     margin-right: auto;
   }
+
+  @media only screen and (min-width: 220px) {
+    .swiper {
+      width: 220px;
+      padding: 12px;
+      /* margin: 0;
+      margin-left: auto;
+      margin-right: auto; */
+    }
+
+    .swiper-slide {
+      width: 220px;
+    }
+
+    div.card-child {
+      width: 220px;
+    }
+  }
+
+  @media only screen and (min-width: 344px) {
+    .swiper {
+      width: 240px;
+      padding: 48px;
+    }
+
+    .swiper-slide {
+      width: 240px;
+    }
+
+    div.card-child {
+      width: 240px;
+    }
+
+  }
+
+  @media only screen and (min-width: 396px) {
+    .swiper {
+      width: 300px;
+      padding: 48px;
+    }
+
+    .swiper-slide {
+      width: 300px;
+    }
+
+    div.card-child {
+      width: 300px;
+    }
+
+  }
+
+  @media only screen and (min-width: 840px) {
+    .swiper {
+      display: none;
+    }
+
+    
+  }
+
