@@ -1,7 +1,6 @@
 import "./App.css";
 import { Intro } from "./../Intro/Intro.js";
 import { Cards } from "./../Cards/Cards.js";
-import { CardSwiper } from "./../Cards/CardSwiper.js";
 import { Project, ProjectVideo } from "./../Projects/Projects.js";
 import { MarqueeTicker } from "./../Marquee/Marquee.js";
 import ReactGA from "react-ga";
@@ -17,8 +16,6 @@ function App() {
       <span id="skills" ></span>
 
       <Cards />
-      <CardSwiper />
-
       <div
         style={{
           borderTop: "1px solid #E3E3E3 ",
