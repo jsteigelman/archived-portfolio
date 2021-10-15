@@ -6,6 +6,34 @@
   text-align: center;
 }
 
+.card-child {
+  width: 300px;
+  margin: 0;
+}
+
+.card-child h4 {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.card-child ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-child img {
+  margin: 24px 0;
+}
+
+div.card-child {
+  margin: 0;
+}
+
+
+
+/* single card above */
+
 .cards-child {
   display: flex;
   flex-direction: column;

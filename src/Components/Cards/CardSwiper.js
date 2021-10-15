@@ -1,59 +1,43 @@
-// core version + navigation, pagination modules:
-import Swiper, { Navigation } from 'swiper'
-// import Swiper and modules styles
-import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import { Cards } from './Cards'
+import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Card } from './Cards.js'
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+import './CardSwiper.css'
 
-// configure Swiper to use modules
-Swiper.use([Navigation, Pagination])
+// import Swiper core and required modules
+import SwiperCore, { EffectFlip, Pagination, Navigation } from 'swiper'
+
+// install Swiper modules
+SwiperCore.use([EffectFlip, Pagination, Navigation])
 
 export class CardSwiper extends React.Component {
   render() {
-    //init swiper
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      direction: 'vertical',
-      loop: true,
-
-      // If we need pagination
-      pagination: {
-        el: '.swiper-pagination',
-      },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      scrollbar: {
-        el: '.swiper-scrollbar',
-      },
-    })
-
     return (
-      <div class='swiper'>
-
-        {/* Required wrapper */}
-        <div class='swiper-wrapper'>
-
-          {/* Slides */}
-          <div class='swiper-slide'>Slide 1</div>
-          <div class='swiper-slide'>Slide 2</div>
-          <div class='swiper-slide'>Slide 3</div>
-        </div>
-
-        {/* If we need navigation buttons */}
-        <div class='swiper-button-prev'></div>
-        <div class='swiper-button-next'></div>
-
-        {/* If we need scrollbar */}
-
-        <div class='swiper-scrollbar'></div>
-      </div>
+      <>
+        <Swiper
+          effect={'flip'}
+          grabCursor={true}
+          pagination={true}
+          navigation={true}
+          slidesPerView={1}
+          width={600}
+          className="swiper mySwiper"
+        >
+          <SwiperSlide className='swiper-slide'>
+            <Card title='programming' />
+          </SwiperSlide>
+          <SwiperSlide className='swiper-slide'>
+            <Card title='technologies' />
+          </SwiperSlide>
+          <SwiperSlide className='swiper-slide'>
+            <Card title='certifications' />
+          </SwiperSlide>
+          <SwiperSlide className='swiper-slide'>
+          <Card title='experience' />
+        </SwiperSlide>
+        </Swiper>
+      </>
     )
   }
 }

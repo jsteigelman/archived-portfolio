@@ -1,0 +1,28 @@
+.swiper {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+  }
+  
+.swiper-slide {
+    width: 300px;
+    height: 300px;
+  }
+
+div.card-child {
+    background-color: #FAF9F9;
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 12px;
+
+}
+
+.swiper-slide img {
+    width: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
