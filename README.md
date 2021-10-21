@@ -23,5 +23,4 @@ This website is deployed on Netlify: [www.helloimjoey.com](https://www.helloimjo
 ## Functionality
 * User can view a selection of my projects and access relevant links for each (live site, GitHub repo, etc.)
 * User can view my technical skills
-* User can contact me
 * Responsive design
