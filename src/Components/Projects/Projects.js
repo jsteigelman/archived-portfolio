@@ -36,6 +36,7 @@ export class ProjectButton extends React.Component {
     return (
       <a
       className="projects-button"
+      onClick={this.eventTrack.bind(currentProject, currentProject, "Button")}
         target="_blank"
         rel="noopener noreferrer"
         href={projectData[currentProject][currentButton].url}
