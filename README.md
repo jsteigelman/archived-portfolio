@@ -1,7 +1,7 @@
 # OBSOLETE - Developer Portfolio Website
 
-## Update from Feb 2022
-This website is no longer in use. I created this website as my first developer portfolio website in 2021, in order to feature the projects I was working on and had recently finished. I have since created a [new developer website](https://www.helloimjoey.com/), which is current and up to date.
+## Update from Feb 2022 - Website No Longer In Use
+This website is no longer in use. I created this website as my first developer portfolio website, in order to feature the projects I was working on and had recently finished. I have since created a [new developer website](https://www.helloimjoey.com/) which I actively maintain.
 
 ## Description - Outdated
 This is my first developer portfolio website that I built using React. 
