@@ -1,6 +1,6 @@
 # OBSOLETE - Developer Portfolio Website
 
-## Update - Website No Longer In Use
+## Update: This Website Is Obsolete - Please See New Site
 This website is no longer in use. I created this website as my first developer portfolio website, in order to feature the projects I was working on and had recently finished. I have since created a [new developer website](https://www.helloimjoey.com/) which I actively maintain.
 
 ## Description
