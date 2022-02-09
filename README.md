@@ -1,13 +1,10 @@
-# Developer Portfolio Website
+# OBSOLETE - Developer Portfolio Website
 
-## Description
-This is my developer portfolio website that I built using React. 
+## Update from Feb 2022
+This website is no longer in use. I created this website as my first developer portfolio website in 2021, in order to feature the projects I was working on and had recently finished. I have since created a new developer website, which I encourage you to check out here: www.helloimjoey.com](https://www.helloimjoey.com/)
+
+## Description - Outdated
+This is my first developer portfolio website that I built using React. 
 
 ## Live Site URL
-This website is deployed on Netlify: [www.helloimjoey.com](https://www.helloimjoey.com/)
-
-<!-- ## Functionality
-* User can view a selection of my projects and access relevant links for each (live site, GitHub repo, etc.)
-* User can view my technical skills
-* Responsive design
- -->
+Although this website is deprecated it can still be viewed at the new domain: [archived-portfolio-steigelman.netlify.app](archived-portfolio-steigelman.netlify.app)
